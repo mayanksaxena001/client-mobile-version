@@ -9,7 +9,7 @@ import { DashboardService } from './dashboard/dashboard.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'seafood-blockchain-casestudy';
+  title = 'Seafood case study';
 
   constructor(private router: Router, private dashboardService: DashboardService) {
     router.events.subscribe((val) => {
