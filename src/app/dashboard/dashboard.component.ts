@@ -17,11 +17,11 @@ declare let $: any;
 })
 export class DashboardComponent implements OnInit, OnDestroy, AfterViewInit {
 
-  @ViewChild('editEntityForm') editEntityForm: any;
-  @ViewChild('addEntityForm') addEntityForm: any;
-  @ViewChild('addSensorForm') addSensorForm: any;
-  @ViewChild('sensorMap') sensorMapElement: any;
-  @ViewChild('transactionMap') transactionMapElement: any;
+  @ViewChild('editEntityForm', { static: false }) editEntityForm: any;
+  @ViewChild('addEntityForm', { static: false }) addEntityForm: any;
+  @ViewChild('addSensorForm', { static: false }) addSensorForm: any;
+  @ViewChild('sensorMap', { static: false }) sensorMapElement: any;
+  @ViewChild('transactionMap', { static: false }) transactionMapElement: any;
 
   sensorMap: google.maps.Map;
   transactionMap: google.maps.Map;
