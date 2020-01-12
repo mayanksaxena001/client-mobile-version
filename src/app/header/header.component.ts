@@ -34,9 +34,9 @@ export class HeaderComponent implements OnInit, AfterViewInit, OnDestroy {
   loginPassword;
   wallet: WalletModal;
 
-  @ViewChild('requestTokenForm') requestTokenForm: any;
-  @ViewChild('transferTokenForm') transferTokenForm: any;
-  @ViewChild('getPrivateKeyForm') getPrivateKeyForm: any;
+  @ViewChild('requestTokenForm', { static: false }) requestTokenForm: any;
+  @ViewChild('transferTokenForm', { static: false }) transferTokenForm: any;
+  @ViewChild('getPrivateKeyForm', { static: false }) getPrivateKeyForm: any;
 
   constructor(private loginService: LoginService, private router: Router,
     private dashboardService: DashboardService) {
